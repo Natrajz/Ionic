@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border ion-hide">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="mid_content ion-align-items-center">
+  <ion-grid style="height: 100%">
+    <ion-row class="ion-justify-content-center ion-align-items-center" style="height: 100%">
+        <ion-col text-center size="12">
+            <h1>EC!FM</h1>
+            <form [formGroup]="loginForm" (ngSubmit)="login()" novalidate>
+              <ion-row>
+                <ion-col>
+                    <ion-item lines="full">
+                      <ion-input formControlName="email" placeholder="Email"></ion-input>
+                    </ion-item>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-item>
+                    <ion-input formControlName="password" placeholder="password" type="password"></ion-input>
+                  </ion-item>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-button expand="block" size="default" type="submit">Login</ion-button>
+                </ion-col>
+              </ion-row>
+            </form>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

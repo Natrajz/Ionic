@@ -1,0 +1,22 @@
+.mid_content {
+    --background: linear-gradient(0deg, rgb(5 36 96 / 50%), rgb(5 36 96 / 80%)), url('/assets/bg.jpg') no-repeat fixed right;
+}
+ion-toolbar{
+    --ion-toolbar-background:transparent;
+}
+ion-item {
+    --border-width: 2px;
+    --border-radius: 8px;
+}
+ion-item.item-interactive.ion-valid.item-has-focus { 
+    --border-color: var(--highlight-color-valid);   
+}
+ion-item.ion-invalid.ion-touched { 
+    --border-color: var(--ion-color-danger);   
+}
+h1 {
+    font-size: 42px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}

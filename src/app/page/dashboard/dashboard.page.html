@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Dashboard</ion-title>
+    <ion-button (click)="logoutAction()" color="secondary" slot="end">
+      <ion-icon name="log-out-outline"></ion-icon>  
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="mid_content">
+    <ion-list-header>User History </ion-list-header>
+    <ion-list *ngFor="let list of lists" lines="full" inset="true">
+        <ion-item size="12">
+          <ion-avatar slot="start">
+            <img src="{{list.avatar}}">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{list.first_name}}</h2>
+            <h3>{{list.email}}</h3>
+          </ion-label>
+        </ion-item>
+  </ion-list>
+</ion-content>
